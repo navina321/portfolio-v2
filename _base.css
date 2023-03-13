@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #363636;
+  color: #d2b1df;
+}
+
+a:link {
+  text-decoration: none;
+}

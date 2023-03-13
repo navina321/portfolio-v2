@@ -1,0 +1,360 @@
+@import "./base";
+
+.container {
+    border: 2px solid none;
+    margin: 2rem 2rem;
+}
+
+.header-container {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: $font-display;
+    font-weight: 700;
+}
+
+.header__navigation {
+    display: none;
+}
+
+.title-container {
+    height: 30rem;
+
+    h1 {
+        font-size: 5rem;
+        font-family: $font-display;
+        font-weight: 400;
+    }
+
+    p {
+        margin-top: 3rem;
+        font-size: 1rem;
+        text-align: justify;
+        font-family: $font-body;
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: $font-display;
+    }
+    img {
+        width: 19rem;
+        margin: 4rem;
+    }
+    p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: justify;
+        font-family: $font-body;
+    }
+}
+
+.techskill-container {
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: $font-display;
+    }
+
+    p {
+        margin-top: 3rem;
+        font-size: 1rem;
+        text-align: justify;
+        font-family: $font-body;
+    }
+
+    .skill__icons {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        
+        font-family: $font-body;
+        font-size: 1rem;
+        font-weight: 400;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+        &--color {
+            fill: aqua;
+        }
+
+        &--position {
+            flex-basis: 33.333%;
+        } 
+    }
+}
+
+.project-container {
+   
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    h4 {
+        font-size: 2rem;
+        font-weight: 400;
+
+    }
+    .portfolio__project {
+        display: grid;
+        grid-template-columns: 5fr 1fr 1fr;
+        grid-template-rows: 4fr 1fr;
+
+        justify-items: center;
+        align-items: center;
+        margin-top: 2rem;
+
+        .portfolio__project--display {
+            width: 20.2rem;
+            height: 16.5rem;
+            padding: 0;
+            border: 0.5rem solid $color-primary;
+
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            background-color: $color-background;
+        }
+
+        .portfolio__project--title {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            margin-left: 1rem;
+            justify-self: start;
+        }
+
+        .portfolio__project--icon1 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .portfolio__project--icon2 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    }
+    
+}
+
+.exp-int-container {
+    margin-top: 4rem;
+
+    
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 2rem 0rem;
+        width: 36.125rem;
+    }
+}
+
+.contact-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    h1 {
+        font-size: 5rem;
+        font-family: $font-display;
+        font-weight: 400;
+    }
+
+   button {
+        border:2px solid $colour-secondary;
+        margin-top: 3.5rem;
+        font-size: 1rem;
+        font-family: $font-body;
+        height: 5rem;
+        width: 17rem;
+    }
+
+}
+
+.footer-container {
+    height: 7rem;
+    margin: 1rem;
+
+    .footer-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    } 
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        margin: 3rem
+    }
+
+    .header-container {
+
+        height: 6rem;
+
+        font-size: 3rem;
+        display: flex;
+        justify-content: space-between;
+        
+
+        .header__navigation {
+           
+            display: flex;
+            justify-content: space-evenly;
+
+    
+            font-family: $font-body;
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 2rem;
+
+            height: 6.25rem;
+            width: 25rem;
+        }
+    }
+
+    .title-container {
+
+        h1 {
+            font-size: 8rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+
+            width: 38rem;
+            height: 8rem;
+        }
+    }
+
+    .about-container {
+        
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 2fr;
+
+        h2 {
+            font-size: 3rem;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        p {
+            font-size: 1.25rem;
+
+            width: 54.5rem;
+            height: 21.2rem;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        img {
+            height: 34.8rem;
+            width: 28rem;
+
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+
+    .techskill-container {
+
+        .skill-text {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+
+            height: 3.25rem;
+            width: 69.4rem;
+        }
+
+        .skill__icons--position {
+            flex-basis: 11.111%;
+        }
+    }
+
+    .project-container{
+
+        .portfolio {
+                        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+
+
+            height: 49.5rem;
+            width: 82.95rem;
+
+            &__project {
+                flex-basis: 33.333%;
+                
+                &--display {
+                    width: 27.65rem;
+                    height: 16.5rem
+                }
+            }
+        }
+
+    }
+    .exp-int-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .footer-icons {
+        margin-top: 8rem;
+        
+    }
+}

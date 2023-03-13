@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap');
+
+$font-body: "Inter", sans-serif;
+$font-display: "Cormorant", sans-serif;
+
+$color-primary: #363636;
+$colour-secondary: #d2b1df;
+$color-background: #545454;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-primary;
+    color: $colour-secondary;
+}
+
+a:link {
+    text-decoration: none;
+}
